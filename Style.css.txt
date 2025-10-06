@@ -1,0 +1,158 @@
+/* David and Wandile Roora Day — Styles */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  color: #333;
+  background-color: #f9f7f4;
+  background-image: url('pattern.png');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  color: #064e3b;
+  font-size: 1.5rem;
+}
+
+nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #b45309;
+}
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url('https://source.unsplash.com/1600x800/?african,pattern,wedding');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 8rem 1rem;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.section {
+  padding: 4rem 1.5rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 2rem auto;
+  border-radius: 20px;
+  max-width: 900px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.event-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.event {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.button {
+  display: inline-block;
+  background-color: #065f46;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 0.5rem;
+}
+
+.button:hover {
+  background-color: #047857;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
+.rsvp-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.whatsapp {
+  background-color: #128C7E;
+}
+
+.email {
+  background-color: #b45309;
+}
+
+.music audio {
+  margin-top: 1rem;
+}
+
+footer {
+  background-color: rgba(0,0,0,0.8);
+  color: #f9f9f9;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+
+footer .note {
+  color: #ccc;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .event-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .event {
+    flex: 1;
+  }
+}
